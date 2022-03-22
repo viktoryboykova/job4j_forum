@@ -38,7 +38,9 @@ public class PostControl {
 
     @PostMapping(path = "/save")
     public String save(@ModelAttribute Post post) {
-        post.setCreated(Calendar.getInstance());
+        if (post.getId() == 0) {
+            post.setCreated(Calendar.getInstance());
+        }
         postService.save(post);
         return "redirect:/";
     }

@@ -120,8 +120,6 @@
           <configuration>
             <archive>
               <manifest>
-                <addClasspath>true</addClasspath>
-                <classpathPrefix>lib/</classpathPrefix>
                 <mainClass>ru.job4j.forum.Main</mainClass>
               </manifest>
             </archive>

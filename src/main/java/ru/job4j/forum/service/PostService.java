@@ -15,17 +15,17 @@ public class PostService {
         this.postRepository = postRepository;
     }
 
-    public void savePost(Post post) {
+    public void save(Post post) {
         postRepository.save(post);
     }
 
-    public List<Post> getAllPosts() {
+    public List<Post> getAll() {
         List<Post> rsl = new ArrayList<>();
         postRepository.findAll().forEach(rsl::add);
         return rsl;
     }
 
-    public Post getPostById(int id) {
-        return postRepository.findById((long) id).orElse(null);
+    public Post getById(int id) {
+        return postRepository.findById(id).orElse(null);
     }
 }

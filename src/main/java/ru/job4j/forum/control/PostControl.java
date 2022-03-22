@@ -19,7 +19,7 @@ public class PostControl {
 
     @GetMapping({"/post"})
     public String index(Model model, @RequestParam(name = "id") Integer id) {
-        model.addAttribute("post", postService.getPostById(id));
+        model.addAttribute("post", postService.getById(id));
         return "post";
     }
 
@@ -30,13 +30,13 @@ public class PostControl {
 
     @GetMapping(path = "/edit")
     public String edit(Model model, @RequestParam(name = "id") Integer id) {
-        model.addAttribute("post", postService.getPostById(id));
+        model.addAttribute("post", postService.getById(id));
         return "edit";
     }
 
     @PostMapping(path = "/save")
     public String save(@ModelAttribute Post post) {
-        postService.savePost(post);
+        postService.save(post);
         return "redirect:/";
     }
 }

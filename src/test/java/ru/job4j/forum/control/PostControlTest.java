@@ -38,10 +38,10 @@ public class PostControlTest {
     @MockBean
     private PostService postService;
 
-    @Autowired
+    @MockBean
     private UserService userService;
 
-    @Autowired
+    @MockBean
     private AuthorityRepository authorityRepository;
 
     @Test

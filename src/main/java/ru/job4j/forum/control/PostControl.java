@@ -40,8 +40,13 @@ public class PostControl {
     public String save(@ModelAttribute Post post) {
         if (post.getId() == 0) {
             post.setCreated(Calendar.getInstance());
+            postService.save(post);
+        } else {
+            Post postFromDB = postService.getById(post.getId());
+            postFromDB.setName(post.getName());
+            postFromDB.setDescription(post.getDescription());
+            postService.save(postFromDB);
         }
-        postService.save(post);
         return "redirect:/";
     }
 }

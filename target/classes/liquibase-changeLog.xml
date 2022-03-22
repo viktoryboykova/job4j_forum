@@ -8,4 +8,5 @@
     <include file="db/schema.sql" relativeToChangelogFile="true"/>
     <include file="db/insert.sql" relativeToChangelogFile="true"/>
     <include file="db/update_01.sql" relativeToChangelogFile="true"/>
+    <include file="db/update_02.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>

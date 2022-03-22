@@ -695,3 +695,52 @@ insert into users (id, authority_id, enabled, password, username) values (null, 
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "USERS" не найдена
 Table "USERS" not found; SQL statement:
 insert into users (id, authority_id, enabled, password, username) values (null, ?, ?, ?, ?) [42102-200]
+2022-03-22 19:30:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]
+2022-03-22 19:30:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]
+2022-03-22 19:31:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]
+2022-03-22 19:31:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]
+2022-03-22 19:31:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]
+2022-03-22 19:31:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]
+2022-03-22 19:31:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "AUTHORITIES" уже существует
+Table "AUTHORITIES" already exists; SQL statement:
+CREATE TABLE authorities (
+                             id serial primary key,
+                             authority VARCHAR(50) NOT NULL unique
+); [42101-200]

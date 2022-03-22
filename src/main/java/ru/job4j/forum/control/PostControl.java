@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import ru.job4j.forum.model.Post;
 import ru.job4j.forum.service.PostService;
 
+import java.util.Calendar;
+
 @Controller
 public class PostControl {
     private final PostService postService;
@@ -36,6 +38,7 @@ public class PostControl {
 
     @PostMapping(path = "/save")
     public String save(@ModelAttribute Post post) {
+        post.setCreated(Calendar.getInstance());
         postService.save(post);
         return "redirect:/";
     }

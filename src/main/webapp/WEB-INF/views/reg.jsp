@@ -1,7 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
+<head>
+    <title>Регистрация</title>
+</head>
 <body>
+<div class="row">
+    <h4>Регистрация</h4>
+</div>
+<br>
 <form name='login' action="<c:url value='/reg'/>" method='POST'>
     <table>
         <tr>

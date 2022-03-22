@@ -28,9 +28,14 @@
             <a href="<c:url value='/logout'/>">Выйти</a>
         </li>
     </ul>
+    <div>
+        Пользователь : ${user.username}
+    </div>
+    <br>
     <div class="row">
         <h4>Форум job4j</h4>
     </div>
+    <br>
     <ul class="nav">
         <li class="nav-item">
             <a href="<c:url value='/create'/>">Добавить тему</a>
